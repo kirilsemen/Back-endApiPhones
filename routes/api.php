@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\ApiController;
 
 Route::prefix('v1')->group(function () {
-    Route::get('user', [ApiController::class, 'getPhones']);
+    Route::get('phones', [ApiController::class, 'getPhones']);
     Route::post('/create/order', [ApiController::class, 'createOrder']);
 
     Route::get('orders', [ApiController::class, 'getOrders']);
